@@ -44,13 +44,13 @@ class MainActivity : AppCompatActivity() {
                 else -> {Toast.makeText(this,"기타문장.",Toast.LENGTH_SHORT).show()}
             }
 
-            var year = 1988
-
-            val age = when(year) {
-                1988 -> 32
-                in 1991..2000 -> 20
-                else -> -1
-            }
+//            var year = 1988
+//
+//            val age = when(year) {
+//                1988 -> 32
+//                in 1991..2000 -> 20
+//                else -> -1
+//            }
 
         }
 
