@@ -17,8 +17,15 @@ class MainActivity : AppCompatActivity() {
 
         okBtn.setOnClickListener {
 //            Ctrl + k 커밋
-            var inputString = inputEdt.text.toString()
-            resultTxt.text = inputString
+            var inputString = inputEdt.text.toString() // get => 내용물 받아오기.
+            resultTxt.text = inputString // set => 내용물 설정하기.
+        }
+
+        okBtn.setOnLongClickListener {
+
+            resultTxt.text = "초기상태"
+
+            return@setOnLongClickListener true
         }
     }
 }
